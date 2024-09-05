@@ -1,0 +1,48 @@
+.intern-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intern-form-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.intern-form-container form div {
+    margin-bottom: 15px;
+}
+
+.intern-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.intern-form-container input[type="text"],
+.intern-form-container input[type="email"],
+.intern-form-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.intern-form-container button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.intern-form-container button:hover {
+    background-color: #0056b3;
+}
