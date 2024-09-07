@@ -1,42 +1,67 @@
 /* Register.css */
-form {
+/* form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-  }
-  
-  input, select, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  p {
-    margin: 10px 0;
-    font-size: 14px;
-  }
-  
-  p.error {
-    color: red;
-  }
-  
-  p.success {
-    color: green;
-  }
-  
+  } */
+
+.register-page {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.registerPage-container {
+  width: 50%;
+  max-width: 500px;
+  margin: 0px auto;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+select,
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-text {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.to_login {
+  padding: 10px 0px 10px 0px;
+  font-size: 15px;
+  color: #7d7d7d;
+  display: flex;
+}
+
+.handle-switch-btn {
+  background-color: transparent;
+  color: #007ac6;
+  border: none;
+  font-size: 14px;
+  font-style: italic;
+  cursor: pointer;
+  margin-left: 3px;
+  /* margin-top: ; */
+}

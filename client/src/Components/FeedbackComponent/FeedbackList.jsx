@@ -72,8 +72,8 @@ const FeedbackList = ({ internId }) => {
             <p>Manager ID: {feedback.managerId || 'N/A'}</p>
             <p>Mentor ID: {feedback.mentorId || 'N/A'}</p>
             <p>Timestamp: {new Date(feedback.timestamp).toLocaleString()}</p>
-            <button onClick={() => handleEditClick(feedback)}>Edit</button>
-            <button onClick={() => handleDelete(feedback._id)}>Delete</button>
+            <button onClick={() => handleEditClick(feedback)} className='submit-btn'>Update</button>
+            <button onClick={() => handleDelete(feedback._id)} className='cancel-btn'>Delete</button>
           </li>
         ))}
       </ul>
@@ -88,13 +88,15 @@ const FeedbackList = ({ internId }) => {
             }}
           >
             <textarea
+            className="input-feild"
               value={newFeedbackText}
               onChange={(e) => setNewFeedbackText(e.target.value)}
               required
             ></textarea>
-            <button type="submit">Update Feedback</button>
+            <button type="submit" className='submit-btn'>Update Feedback</button>
             <button
               type="button"
+              className='cancel-btn'
               onClick={() => {
                 setEditFeedback(null);
                 setNewFeedbackText('');

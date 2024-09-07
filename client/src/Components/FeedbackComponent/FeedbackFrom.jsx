@@ -115,34 +115,40 @@ const FeedbackForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <h2>Add New Feedback</h2>
-      <div>
-        <label htmlFor="feedback">Feedback:</label>
+      <label htmlFor="feedback" className='label'>Feedback:</label>
+      <div className="input-container">
+        
         <textarea
           id="feedback"
+          className="input-feild"
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
           required
         ></textarea>
       </div>
-      <div>
-        <label htmlFor="managerId">Manager ID (optional):</label>
+      <label htmlFor="managerId" className='label'>Manager ID (optional):</label>
+      <div className="input-container">
+        
         <input
           type="text"
           id="managerId"
+          className="input-feild"
           value={managerId}
           onChange={(e) => setManagerId(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="mentorId">Mentor ID (optional):</label>
+      <label htmlFor="mentorId" className='label'>Mentor ID (optional):</label>
+      <div className="input-container">
+        
         <input
           type="text"
           id="mentorId"
+          className="input-feild"
           value={mentorId}
           onChange={(e) => setMentorId(e.target.value)}
         />
       </div>
-      <button type="submit">Submit Feedback</button>
+      <button type="submit" className='submit-btn'>Submit Feedback</button>
     </form>
   );
 };

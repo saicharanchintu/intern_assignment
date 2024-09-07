@@ -67,9 +67,8 @@ const TaskList = ({ internId }) => {
 
     return (
         <div>
-            <h2>Tasks</h2>
             {!showForm && (
-                <button onClick={handleAddTask}>Assign New Task</button>
+                <button onClick={handleAddTask} className='add-feedback-btn'>Assign New Task</button>
             )}
 
             {showForm ? (
@@ -88,14 +87,14 @@ const TaskList = ({ internId }) => {
                                 <p>Due Date: {new Date(task.dueDate).toLocaleDateString()}</p>
                                 <p>Priority: {task.priority}</p>
                                 <p>Status: {task.status}</p>
-                                <button onClick={() => handleEditTask(task)}>Edit</button>
-                                <button onClick={() => handleDeleteTask(task._id)}>Delete</button>
+                                <button onClick={() => handleEditTask(task)} className='submit-btn'>Update</button>
+                                <button onClick={() => handleDeleteTask(task._id)} className='cancel-btn'>Delete</button>
                             </div>
                         </li>
                     ))}
                 </ul>
             )}
-        </div>
+        </div>  
     );
 };
 

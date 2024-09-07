@@ -15,6 +15,7 @@ import FeedbackPage from "./Pages/feedbackPage";
 import Login from "./Components/Auth/Login";
 import Dashboard from "./Components/Auth/Dashboard";
 import Register from "./Components/Auth/Register";
+import NavBar from "./Components/Navbar/Navbar";
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/navbar" element={<NavBar />} />
         </Routes>
       </div>
     </Router>

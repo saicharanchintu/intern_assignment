@@ -1,35 +1,133 @@
 /* Login.css */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  input, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  p {
-    margin: 10px 0;
-    font-size: 14px;
-    color: red;
-  }
-  
+
+.root{
+  --inputColor: rgba(40, 52, 62, 0.07);
+}
+
+.login-page,
+.signup-page{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color:#f0f0f0
+} */
+
+.login-page-container{
+  width: 50%;
+  max-width: 400px;
+  margin: 0px auto;
+  background-color:#f0f0f0 ;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.iilustration{
+  width: 50%;
+}
+
+.iilustration img{
+  width: 100%;
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.login-page-context, 
+.login-page-context h1,
+.login-page-context p{
+  padding: 0px 0px 10px 0px ;
+}
+
+/* input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.login-btn {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-cls {
+  margin: 10px 0;
+  font-size: 14px;
+  color: red;
+}
+
+.to_signup {
+  padding: 10px 0px 10px 0px;
+  font-size: 15px;
+  color: #7d7d7d;
+  display: flex;
+}
+
+.handle-switch-btn {
+  background-color: transparent !important;
+  color: #007ac6;
+  border: none;
+  font-size: 14px;
+  font-style: italic;
+  cursor: pointer;
+  margin-left: 4px;
+  display: block;
+  margin-top: 2px;
+}
+
+.input-feild {
+  /* border: none; */
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--inputColor);
+  font-size: 15px;
+  width: 90%;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.pass-see {
+  position: absolute;
+  right: 7%;
+  cursor: pointer;
+}
+
+.input-container{
+  padding: 10px 0px 10px 0px;
+}
+
+.row.input-container{
+  padding: 10px 0px 10px 0px;
+}
